@@ -19,6 +19,20 @@
 
 インスタンスにアクセスできることを確認する。
 
+### Macからのアクセス
+参考: Mac OS XでAWS EC2のLinuxインスタンスにssh接続する(https://qiita.com/tomoktan_cansell/items/5c83f090f958ca35b1d2)
+
+* pemファイルを~/.sshにコピーする
+* pemファイルのアクセス権を変更する
+```shell
+$ cd ~/.ssh
+$ sudo chmod 400 (キーペア名).pem
+```
+* SSH接続: pemファイルは絶対パスで指定すること
+```shell
+$ ssh -i "/User/(ユーザ名)/.ssh/(キーペア名).pem" ubuntu@(パブリックDNS名)
+```
+
 ### GPUの確認
 ```shell
 $ nvidia-smi
