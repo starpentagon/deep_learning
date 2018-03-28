@@ -2,7 +2,7 @@
 * 以下の主要3タスクの有名モデルの動作方法を検証
   1. classification: ResNet50
   2. detection: SSD
-  3. segmentation: Mask R-CNN
+  3. segmentation: FCN, Mask R-CNN
 * 手元の画像で主要タスクを動かした結果を共有
 * おまけ: Jupyter notebookからリモートで分析を行う方法の紹介
 
