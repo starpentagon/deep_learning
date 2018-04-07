@@ -66,7 +66,7 @@ https://gist.github.com/anonymous/4c3105119a233cb33926651c3ea1966c
 ```
 に変更する。
 
-* model.predictでエラーがでる
+* model.predictでエラーがでる
 ![model.predict error](./pics/01_ssd_model_predict_error.png)
 
 ### cory8249版（うまくいかず）
@@ -76,7 +76,7 @@ https://github.com/cory8249/ssd_keras.git
 * test_ssd.pyを実行してみたがやはりmodel.predictでエラー
 
 ### wikke版
-* Keras2に対応した修正版
+* Keras2に対応した修正版
 https://github.com/wikke/SSD_Keras.git
 をclone
 * ディレクトリに移ってJupyter notebookを起動

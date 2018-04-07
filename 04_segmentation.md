@@ -4,7 +4,7 @@
 * python2が前提になっていることに注意
 ### keras-contrib for DenseNet based model
 ```shell
-$ source activate tensorflow_p27
+$ source activate tensorflow_p27
 $ git clone https://github.com/ahundt/keras-contrib.git -b densenet-atrous
 $ cd keras-contrib
 $ sudo python setup.py install
@@ -20,7 +20,7 @@ $ cd cocoapi/PythonAPI
 $ conda install cython
 $ conda install scikit-image
 ```
-* gccでのbuildが失敗(pthread, cがないと言われる)
+* gccでのbuildが失敗(pthread, cがないと言われる)
 ```shell
 $ cd /home/ubuntu/anaconda3/envs/tensorflow_p27/lib
 $ ln -s /lib/x86_64-linux-gnu/libpthread.so.0 libpthread.so
@@ -41,7 +41,7 @@ $ unzip annotations_trainval2017.zip
 ```
 
 ### MS COCOの確認
-* cocoapi/PythonAPIをホームディレクトリにしてjupyter notebookを起動する
+* cocoapi/PythonAPIをホームディレクトリにしてjupyter notebookを起動する
 * 「pycocoDemo.ipynb」を開く
 * Kernel -> Change Kernel -> Environment(conda_tensorflow_p36)を選択し実行できることを確認する
 
@@ -73,10 +73,10 @@ $ cd ..
 $ export PYTHONPATH=$PYTHONPATH:~/deep_learning/keras_fcn/keras-contrib
 $ python train.py
 ```
-* Keras 2.1.4だとimportエラー。Keras 2.0.8だとimportエラーは解消されるが「SegDirectoryIterator object is not an iterator」というエラーが出る
+* Keras 2.1.4だとimportエラー。Keras 2.0.8だとimportエラーは解消されるが「SegDirectoryIterator object is not an iterator」というエラーが出る
   * いったん中断
   * keras-contribをpipで最新版を入れたら解消
-  * が、GPUを使ってくれない
+  * が、GPUを使ってくれない
 
 ## Evaluating
 ```shell
@@ -177,4 +177,4 @@ $ wget https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_
 $ jupyter notebook
 ```
 * demo.ipynbを実行する
-  * 画像によってはkernelが死ぬことがある。まだ、動作は不安定
+  * 画像によってはkernelが死ぬことがある。まだ、動作は不安定
