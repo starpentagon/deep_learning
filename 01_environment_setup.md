@@ -22,7 +22,7 @@
 ### Macからのアクセス
 参考: Mac OS XでAWS EC2のLinuxインスタンスにssh接続する(https://qiita.com/tomoktan_cansell/items/5c83f090f958ca35b1d2)
 
-* pemファイルを~/.sshにコピーする
+* pemファイルを~/.sshにコピーする
 * pemファイルのアクセス権を変更する
 ```shell
 $ cd ~/.ssh
@@ -55,8 +55,7 @@ from notebook.auth import passwd
 passwd()
 quit()
 ```
-パスワードは「社名を小文字」。表示されるsha1をメモしておく。
-('sha1:dc2d59cc7ca3:74ce705df090316be32834b76c7dea7a4ad78912')
+表示されるsha1をメモしておく。
 
 2. Jupyter設定ファイルの編集
 
