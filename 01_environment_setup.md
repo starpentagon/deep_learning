@@ -28,7 +28,7 @@
 $ cd ~/.ssh
 $ sudo chmod 400 (キーペア名).pem
 ```
-* SSH接続: pemファイルは絶対パスで指定すること
+* SSH接続: pemファイルは絶対パスで指定すること
 ```shell
 $ ssh -i "/User/(ユーザ名)/.ssh/(キーペア名).pem" ubuntu@(パブリックDNS名)
 ```
@@ -70,7 +70,7 @@ c.NotebookApp.ip = '0.0.0.0'
 
 c.NotebookApp.passwordを変更
 ```python
-c.NotebookApp.password = u'sha1:dc2d59cc7ca3:74ce705df090316be32834b76c7dea7a4ad78912'
+c.NotebookApp.password = u'sha1:(sha1値)'
 ```
 
 c.NotebookApp.portを変更
